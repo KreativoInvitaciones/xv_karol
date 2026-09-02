@@ -617,3 +617,24 @@ transition:opacity 1.35s ease,visibility 1.35s ease,filter 1.35s ease}
   .photo-envelope-btn{width:96vw}
   .cloud{filter:blur(34px)}
 }
+
+
+/* Galería final de Karol */
+.photo-content{min-height:720px}
+.photo-gallery{position:relative;width:min(86vw,450px);display:flex;align-items:center;justify-content:center;margin-top:22px}
+.gallery-viewport{width:min(78vw,390px);aspect-ratio:4/5;overflow:hidden;border:1px solid rgba(196,154,74,.62);border-radius:210px 210px 28px 28px;background:rgba(255,250,244,.62);box-shadow:0 20px 50px rgba(112,70,71,.16);touch-action:pan-y}
+.gallery-track{display:flex;width:100%;height:100%;transition:transform .65s cubic-bezier(.22,.78,.22,1);will-change:transform}
+.gallery-slide{min-width:100%;height:100%;margin:0;padding:9px}
+.gallery-slide img{width:100%;height:100%;display:block;object-fit:cover;object-position:center;border-radius:200px 200px 22px 22px;user-select:none;-webkit-user-drag:none}
+.gallery-arrow{position:absolute;z-index:3;width:44px;height:44px;border-radius:50%;border:1px solid rgba(196,154,74,.58);background:rgba(255,250,244,.92);color:var(--rose-deep);font-family:Georgia,serif;font-size:34px;line-height:1;display:grid;place-items:center;box-shadow:0 8px 22px rgba(112,70,71,.15);cursor:pointer}
+.gallery-prev{left:-4px}.gallery-next{right:-4px}
+.gallery-hint{font-family:'Alex Brush',cursive;color:var(--rose-deep);font-size:38px;margin:16px 0 6px}
+.gallery-hint::before{content:'←  ';font-family:'Cormorant Garamond',serif;color:var(--gold);font-size:24px}.gallery-hint::after{content:'  →';font-family:'Cormorant Garamond',serif;color:var(--gold);font-size:24px}
+.gallery-dots{display:flex;gap:9px;justify-content:center}
+.gallery-dots button{width:9px;height:9px;padding:0;border-radius:50%;border:1px solid var(--gold);background:transparent;cursor:pointer}
+.gallery-dots button.active{background:var(--gold)}
+.family-message{max-width:470px;font-size:clamp(19px,4.3vw,25px);line-height:1.46;color:var(--ink)}
+.family-message p{margin:12px 0 18px}
+.padrino-kicker{margin-top:4px}
+.padrino-content{min-height:720px}
+@media(max-width:480px){.gallery-arrow{width:40px;height:40px;font-size:30px}.gallery-prev{left:-2px}.gallery-next{right:-2px}.photo-content,.padrino-content{min-height:690px}}

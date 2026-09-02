@@ -51,11 +51,24 @@
   <section class="page photo-page">
     <div class="content photo-content">
       <p class="section-kicker">Karol Fernanda</p>
-      <div class="photo-placeholder">
-        <div class="photo-placeholder-inner">
-          <span>Fotografía</span>
-          <small>Se agregará aquí en blanco y negro</small>
+      <div class="photo-gallery" aria-label="Galería de fotografías de Karol Fernanda">
+        <button class="gallery-arrow gallery-prev" type="button" aria-label="Foto anterior">‹</button>
+        <div class="gallery-viewport">
+          <div class="gallery-track">
+            <figure class="gallery-slide"><img src="karol-01.png" alt="Fotografía de Karol Fernanda 1"></figure>
+            <figure class="gallery-slide"><img src="karol-02.png" alt="Fotografía de Karol Fernanda 2"></figure>
+            <figure class="gallery-slide"><img src="karol-03.png" alt="Fotografía de Karol Fernanda 3"></figure>
+            <figure class="gallery-slide"><img src="karol-04.png" alt="Fotografía de Karol Fernanda 4"></figure>
+          </div>
         </div>
+        <button class="gallery-arrow gallery-next" type="button" aria-label="Foto siguiente">›</button>
+      </div>
+      <p class="gallery-hint">Desliza</p>
+      <div class="gallery-dots" aria-label="Seleccionar fotografía">
+        <button class="active" type="button" aria-label="Foto 1"></button>
+        <button type="button" aria-label="Foto 2"></button>
+        <button type="button" aria-label="Foto 3"></button>
+        <button type="button" aria-label="Foto 4"></button>
       </div>
     </div>
   </section>
@@ -107,9 +120,12 @@
     <div class="content padrino-content">
       <p class="family-love">Con el amor de mi familia</p>
       <div class="rule"><span></span></div>
-      <p class="section-kicker">Con cariño me acompaña mi padrino</p>
-      
+      <div class="family-message">
+        <p>A mi familia… a ustedes, que con amor, esfuerzo y paciencia me han acompañado en cada paso; gracias por enseñarme a soñar, por creer en mí y por ser siempre mi lugar seguro.</p>
+        <p>Este día también es suyo, porque detrás de cada uno de mis sueños están sus manos sosteniéndome.</p>
+      </div>
       <div class="rule"><span></span></div>
+      <p class="section-kicker padrino-kicker">Con cariño me acompaña mi padrino</p>
       <p class="padrino-name">Rodrigo<br>Rodríguez Tafoya</p>
     </div>
   </section>

@@ -67,3 +67,28 @@ const observer = new IntersectionObserver(entries => {
   });
 },{threshold:.18});
 document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+
+// Galería deslizable de Karol
+(function(){
+  const track=document.querySelector('.gallery-track');
+  const viewport=document.querySelector('.gallery-viewport');
+  const slides=document.querySelectorAll('.gallery-slide');
+  const dots=document.querySelectorAll('.gallery-dots button');
+  const prev=document.querySelector('.gallery-prev');
+  const next=document.querySelector('.gallery-next');
+  if(!track || !slides.length) return;
+  let index=0, startX=0, deltaX=0, dragging=false;
+  function go(i){
+    index=(i+slides.length)%slides.length;
+    track.style.transform=`translateX(-${index*100}%)`;
+    dots.forEach((d,n)=>d.classList.toggle('active',n===index));
+  }
+  prev?.addEventListener('click',()=>go(index-1));
+  next?.addEventListener('click',()=>go(index+1));
+  dots.forEach((d,n)=>d.addEventListener('click',()=>go(n)));
+  viewport.addEventListener('pointerdown',e=>{dragging=true;startX=e.clientX;deltaX=0;viewport.setPointerCapture?.(e.pointerId)});
+  viewport.addEventListener('pointermove',e=>{if(dragging) deltaX=e.clientX-startX});
+  viewport.addEventListener('pointerup',e=>{if(!dragging)return;dragging=false;if(Math.abs(deltaX)>45)go(index+(deltaX<0?1:-1));deltaX=0});
+  viewport.addEventListener('pointercancel',()=>{dragging=false;deltaX=0});
+})();
