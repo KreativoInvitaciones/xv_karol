@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#b9787f">
+  <title>XV años de Karol Fernanda</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Alex+Brush&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<audio id="bgMusic" loop preload="auto">
+  <source src="musica.mp3" type="audio/mpeg">
+</audio>
+<button id="musicToggle" class="music-toggle" type="button" aria-label="Activar o desactivar música">♫</button>
+<main class="site">
+
+  
+
+
+
+<section id="cover" class="page cover envelope-cover photo-cover">
+  <button id="openBtn" class="photo-envelope-btn" type="button" aria-label="Abrir invitación">
+    <div class="photo-envelope">
+      <img class="envelope-photo-base" src="sobre-realista.png" alt="Sobre de invitación de Karol Fernanda">
+    </div>
+  </button>
+
+  <div id="dreamTransition" class="dream-transition" aria-hidden="true">
+    <span class="cloud c1"></span>
+    <span class="cloud c2"></span>
+    <span class="cloud c3"></span>
+    <span class="cloud c4"></span>
+    <span class="cloud c5"></span>
+    <span class="dream-glow"></span>
+  </div>
+</section>
+
+  <section id="inicio" class="page">
+    <div class="content soft-card">
+      <p class="overline">Con la bendición de Dios</p>
+      <p class="intro-text">quiero compartir contigo<br>la alegría de celebrar</p>
+      <h2>Mis XV Años</h2>
+      <h1 class="hero-name inner-name">Karol Fernanda</h1>
+      <p class="message">Hay momentos inolvidables que se atesoran para siempre. Será un honor contar con tu presencia en este día tan especial.</p>
+    </div>
+  </section>
+
+  <section class="page photo-page">
+    <div class="content photo-content">
+      <p class="section-kicker">Karol Fernanda</p>
+      <div class="photo-placeholder">
+        <div class="photo-placeholder-inner">
+          <span>Fotografía</span>
+          <small>Se agregará aquí en blanco y negro</small>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="page">
+    <div class="content date-content">
+      <div class="arch"></div>
+      <p class="date-number">10</p>
+      <p class="month">Octubre</p>
+      <p class="year">2026</p>
+      <div class="rule"><span></span></div>
+      <p class="small-label">Reserva esta fecha</p>
+      <div class="countdown-wrap">
+        <p class="countdown-label">Faltan...</p>
+        <div id="countdown" class="countdown">
+          <div><strong id="days">00</strong><span>Días</span></div>
+          <div><strong id="hours">00</strong><span>Horas</span></div>
+          <div><strong id="minutes">00</strong><span>Minutos</span></div>
+          <div><strong id="seconds">00</strong><span>Segundos</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="page">
+    <div class="content soft-card event-card">
+      <p class="section-kicker">Ceremonia religiosa</p>
+      <h3>Misa</h3>
+      <p class="event-time">12:00 PM</p>
+      <div class="rule"><span></span></div>
+      <p class="place">Templo de Nuestra Señora<br>de los Remedios</p>
+      <a class="main-button action" href="https://www.google.com/maps/search/?api=1&query=Templo%20de%20Nuestra%20Se%C3%B1ora%20de%20los%20Remedios%20P%C3%A9njamo%20Guanajuato" target="_blank" rel="noopener">Ubicación de la misa</a>
+    </div>
+  </section>
+
+  <section class="page">
+    <div class="content soft-card event-card">
+      <p class="section-kicker">Después de la ceremonia,<br>continuemos celebrando juntos</p>
+      <h3>Recepción</h3>
+      <p class="event-time">2:30 PM</p>
+      <div class="rule"><span></span></div>
+      <p class="place">Salón Sentara<br><span>Jardín Terraza</span></p>
+      <p class="address">Av. Ojo de Agua 92<br>Col. Cúpulas, Pénjamo, México, 36900</p>
+      <a class="main-button action" href="https://www.google.com/maps/search/?api=1&query=Sal%C3%B3n%20Sentara%20Jard%C3%ADn%20Terraza%20Av%20Ojo%20de%20Agua%2092%20Col%20C%C3%BApulas%20P%C3%A9njamo%20Guanajuato%2036900" target="_blank" rel="noopener">Cómo llegar</a>
+    </div>
+  </section>
+
+  <section class="page">
+    <div class="content padrino-content">
+      <p class="family-love">Con el amor de mi familia</p>
+      <div class="rule"><span></span></div>
+      <p class="section-kicker">Con cariño me acompaña mi padrino</p>
+      
+      <div class="rule"><span></span></div>
+      <p class="padrino-name">Rodrigo<br>Rodríguez Tafoya</p>
+    </div>
+  </section>
+
+  <section class="page">
+    <div class="content soft-card dress-content">
+      <p class="section-title">Código de vestimenta</p>
+      <p class="formal">Formal</p>
+
+      <div class="dress-silhouettes" aria-hidden="true">
+        <svg class="dress-icon woman-icon" viewBox="0 0 120 210" role="img">
+          <circle cx="60" cy="24" r="12"/>
+          <path d="M60 38 C49 46 46 61 48 78 L35 108 L49 108 L31 183
+                   C45 193 75 193 89 183 L71 108 L85 108 L72 78
+                   C74 61 71 46 60 38 Z"/>
+          <path d="M49 58 C38 69 30 83 24 99"/>
+          <path d="M71 58 C82 69 90 83 96 99"/>
+        </svg>
+
+        <div class="dress-divider"><span></span><b>✦</b><span></span></div>
+
+        <svg class="dress-icon man-icon" viewBox="0 0 120 210" role="img">
+          <circle cx="60" cy="24" r="12"/>
+          <path d="M45 42 L60 55 L75 42 L87 58 L80 112 L70 112 L74 188
+                   L62 188 L60 126 L58 188 L46 188 L50 112 L40 112
+                   L33 58 Z"/>
+          <path d="M52 43 L60 55 L68 43"/>
+          <path d="M60 55 L55 72 L60 82 L65 72 Z"/>
+        </svg>
+      </div>
+
+      <p class="dress-phrase">“Vístete para celebrar un día inolvidable”</p>
+    </div>
+  </section>
+
+  <section class="page">
+    <div class="content soft-card gifts-content">
+      <p class="section-title">Mesa de regalos</p>
+      <p class="gift-text">Tu presencia hará este día aún más especial.<br>Si deseas obsequiarme un detalle, puedes encontrar aquí mi mesa de regalos.</p>
+      <a class="main-button action gift-button" href="https://www.amazon.com.mx/hz/wishlist/ls/2O5MXO478INX5?ref_=wl_share" target="_blank" rel="noopener">Ver mesa de regalos</a>
+    </div>
+  </section>
+
+  <section class="page">
+    <div class="content soft-card final-content">
+      <p class="section-title">Confirma tu asistencia</p>
+      <p class="confirm-text">Será muy especial compartir este momento contigo.</p>
+      <a class="main-button action" href="https://wa.me/524772896418?text=Hola%2C%20confirmo%20mi%20asistencia%20a%20los%20XV%20a%C3%B1os%20de%20Karol%20Fernanda.%20Asistiremos%20___%20personas." target="_blank" rel="noopener">Confirmar por WhatsApp</a>
+      <a class="main-button action secondary" href="https://www.google.com/maps/search/?api=1&query=Sal%C3%B3n%20Sentara%20Jard%C3%ADn%20Terraza%20Av%20Ojo%20de%20Agua%2092%20Col%20C%C3%BApulas%20P%C3%A9njamo%20Guanajuato%2036900" target="_blank" rel="noopener">Ubicación recepción</a>
+      <a class="main-button action secondary" href="https://www.amazon.com.mx/hz/wishlist/ls/2O5MXO478INX5?ref_=wl_share" target="_blank" rel="noopener">Mesa de regalos</a>
+      <div class="rule"><span></span></div>
+      <p class="dreams">“Hoy dejo atrás una etapa llena de recuerdos para comenzar otra llena de sueños.”</p>
+      <div class="rule"><span></span></div>
+      <p class="thanks">Gracias por acompañarme<br>en este día tan especial.</p>
+      <p class="signature">Karol Fernanda</p>
+    </div>
+  </section>
+
+</main>
+<script src="script.js"></script>
+</body>
+</html>
